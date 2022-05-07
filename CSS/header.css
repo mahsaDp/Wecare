@@ -124,7 +124,7 @@ header{
     top: -100px;
     left: 0;
     bottom: 0;
-    animation: rotateRight 20s linear infinite;
+    /*animation: rotateRight 20s linear infinite;*/
 }
 
 @keyframes rotateRight {
@@ -150,8 +150,8 @@ header{
     top: -45px;
     left: 10%;
     bottom: 0;
-    animation: rotateLeft 20s linear infinite;
-    animation-delay: 10s;
+    /*animation: rotateLeft 20s linear infinite;*/
+    /*animation-delay: 10s;*/
 }
 
 @keyframes rotateLeft {
@@ -174,7 +174,7 @@ header{
     top: 10px;
     left: 20%;
     bottom: 0;
-    animation: rotateRight 25s linear infinite;
+    /*animation: rotateRight 25s linear infinite;*/
 }
 
 .head-bottom__image i{
