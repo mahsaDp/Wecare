@@ -100,6 +100,10 @@ header{
     z-index: 1;
 }
 
+.head-bottom__image>div>i{
+    color: lightblue;
+}
+
 .header-bottom__max-circle,
 .header-bottom__mid-circle,
 .header-bottom__min-circle{
@@ -114,6 +118,20 @@ header{
     top: -100px;
     left: 0;
     bottom: 0;
+    animation: rotateRight 20s linear infinite;
+}
+
+@keyframes rotateRight {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .header-bottom__mid-circle{
@@ -123,6 +141,21 @@ header{
     top: -45px;
     left: 10%;
     bottom: 0;
+    animation: rotateLeft 20s linear infinite;
+    animation-delay: 10s;
+}
+
+@keyframes rotateLeft {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 
 .header-bottom__min-circle{
@@ -132,6 +165,7 @@ header{
     top: 10px;
     left: 20%;
     bottom: 0;
+    animation: rotateRight 25s linear infinite;
 }
 
 .head-bottom__image i{
@@ -146,40 +180,24 @@ header{
 }
 
 .hospital{
-    top: 17px;
-    left: 15%;
+    top: 62px;
+    left: 7%;
 }
 
 .stethoscope{
-    top: 120px;
-    left: 68%;
+    top: 65px;
+    right: 2px;
 }
 
 .plus{
-    top: 18px;
-    left: 83%;
+    top: 218px;
+    right: -10px;
 }
 
 .heart{
-    top: -110px;
-    left: 42%;
+    top: -10px;
+    left: 47%;
 }
-
-/*@keyframes heart-animate {*/
-/*    25%{*/
-/*        transform: translate(300px, 180px);*/
-/*    }*/
-/*    50%{*/
-/*        transform: translate(120px, 460px);*/
-/*    }*/
-/*    75%{*/
-/*        transform: translate(-207px, 195px);*/
-/*    }*/
-/*    100%{*/
-/*        transform: translate(50px, -10px);*/
-/*    }*/
-
-/*}*/
 
 .head-bottom__search{
     position: absolute;
