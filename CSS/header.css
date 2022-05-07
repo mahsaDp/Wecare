@@ -127,21 +127,21 @@ header{
     /*animation: rotateRight 20s linear infinite;*/
 }
 
-@keyframes rotateRight {
-    0%{
-        transform: rotate(0deg);
-        transform-origin: center;
-    }
-    50%{
-        transform: rotate(180deg);
-        transform-origin: center;
-    }
+/*@keyframes rotateRight {*/
+/*    0%{*/
+/*        transform: rotate(0deg);*/
+/*        transform-origin: center;*/
+/*    }*/
+/*    50%{*/
+/*        transform: rotate(180deg);*/
+/*        transform-origin: center;*/
+/*    }*/
 
-    100%{
-        transform: rotate(360deg);
-        transform-origin: center;
-    }
-}
+/*    100%{*/
+/*        transform: rotate(360deg);*/
+/*        transform-origin: center;*/
+/*    }*/
+/*}*/
 
 .header-bottom__mid-circle{
     height: 120%;
@@ -154,18 +154,18 @@ header{
     /*animation-delay: 10s;*/
 }
 
-@keyframes rotateLeft {
-    0%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(-180deg);
-    }
+/*@keyframes rotateLeft {*/
+/*    0%{*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    50%{*/
+/*        transform: rotate(-180deg);*/
+/*    }*/
 
-    100%{
-        transform: rotate(-360deg);
-    }
-}
+/*    100%{*/
+/*        transform: rotate(-360deg);*/
+/*    }*/
+/*}*/
 
 .header-bottom__min-circle{
     height: 85%;
