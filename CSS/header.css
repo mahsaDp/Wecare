@@ -82,6 +82,12 @@ header{
     align-self: center;
     margin-right: 7px;
 }
+
+.head-bottom__btn>div>img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
 .head-bottom__btn>div{
     margin-right: 20px;
 }
@@ -124,13 +130,16 @@ header{
 @keyframes rotateRight {
     0%{
         transform: rotate(0deg);
+        transform-origin: center;
     }
     50%{
         transform: rotate(180deg);
+        transform-origin: center;
     }
 
     100%{
         transform: rotate(360deg);
+        transform-origin: center;
     }
 }
 
