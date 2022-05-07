@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>We.Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="shortcut icon" href="image/icon/hospital+icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <nav class="head-navbar grid">
+        <div class="head-navbar__logo grid">
+            <div class="btn btn-light">
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <h2>We.care</h2>
+        </div>
+        <div>
+            <ul class="head-navbar__menu flex">
+                <li><h3><a href="#Doctor">Find a Doctor</a></h3></li>
+                <li><h3><a href="">Find a Hospital</a></h3></li>
+                <li><h3>Health A to Z</h3></li>
+            </ul>
+        </div>
+        <div class="head-navbar__login">
+            <h3>Log in</h3>
+        </div>
+        <div class="head-navbar__SignIn btn btn-light">Sign in</div>
+    </nav>
+
+    <div class="head-bottom flex">
+        <div class="head-bottom__text">
+            <h1>Feel better about finding healthcare</h1>
+            <p>At Healthgrades, we take the guesswork out of finding
+                the right doctors, hospitals and care for you and your family</p>
+            <div class="head-bottom__btn flex">
+                <div class="btn btn-dark flex">
+                    <i class="fa-solid fa-users-medical"></i>
+                    <p>Profiles for Every Doctor in America</p>
+                </div>
+                <div class="btn btn-dark flex">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <p>More Than 10 Million Patient Ratings</p>
+                </div>
+            </div>
+        </div>
+        <div class="head-bottom__image">
+            <img src="image/Doctors/0-removebg-preview.png" alt="header-pic">
+            <div class="header-bottom__max-circle"></div>
+            <div class="header-bottom__mid-circle"></div>
+            <div class="header-bottom__min-circle"></div>
+            <i class="fas fa-hospital hospital"></i>
+            <i class="fa-solid fa-stethoscope stethoscope"></i>
+            <i class="fas fa-plus-circle plus"></i>
+            <i class="fas fa-heartbeat heart"></i>
+        </div>
+        <div class="head-bottom__search grid">
+
+            <label for="search-doctor">
+                <i class="fas fa-search"></i>
+                <input type="text" class="head-bottom__input" id="search-doctor" placeholder="Search Doctor, Conditions or Procedures">
+            </label>
+
+            <label for="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" class="head-bottom__input" id="location" placeholder="Set your Locations">
+            </label>
+            <button class="head-bottom__search-btn btn btn-light">
+                <i class="fas fa-search"></i>
+            </button>
+            <h3>You may be looking for</h3>
+            <div><h5>Family Medicine</h5><span></span></div>
+            <div><h5>Pediatrics</h5><span></span></div>
+            <div><h5>Top Hospital</h5><span></span></div>
+            <div><h5>Telehealth</h5><span></span></div>
+            <div><h5>COVID-19</h5><span></span></div>
+            <div><h5>Orthopedic Sugary</h5><span></span></div>
+            <div>More</div>
+
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <div class="container">
+
+        <!--section-1-->
+        <section class="popular">
+            <h2>Popular Searches on Wecare</h2>
+            <div class="popular__container grid">
+                <ul class="popular_list flex">
+                    <li class="popular_list_active">Specialties</li>
+                    <li>Conditional</li>
+                    <li>Procedures</li>
+                </ul>
+                <div>
+                    <div class="popular_dermatology">
+                        <img src="image/icon/derma.png" alt="icon">
+                    </div>
+                    <h5>Dermatology</h5>
+                </div>
+                <div>
+                    <div class="popular_heart">
+                        <i class="fa-solid fa-lungs"></i>
+                    </div>
+                    <h5>Internal Medicine</h5>
+                </div>
+                <div>
+                    <div class="popular_head">
+                        <i class="fa-solid fa-head-side-virus"></i>
+                    </div>
+                    <h5>Neurology</h5>
+                </div>
+                <div class="popular__active">
+                    <div class="popular_medicine">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h5>General Medicine</h5>
+                </div>
+                <div>
+                    <div class="popular_dentist">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h5>Dentisty</h5>
+                </div>
+                <div>
+                    <div class="popular_otolaryngology">
+                        <img src="image/icon/nose-icon-12.jpg" alt="icon">
+                    </div>
+                    <h5>Otolaryngology</h5>
+                </div>
+            </div>
+        </section>
+
+        <!--section-2-->
+        <section class="find-doctor flex">
+            <div class="find-doctor__text">
+                <h2 id="Doctor">Find the right doctor<br>
+                    right at your fingertips</h2>
+                <p>We.care gives you the tools and information you need.</p>
+                <aside class="flex">
+                    <div class="find-doctor__search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="find-doctor__search-text">
+                        <h3>Search nearest hospital</h3>
+                        <p>Find doctors and hospitals based on the factors that matter most to you</p>
+                    </div>
+                </aside>
+            </div>
+            <div class="find-doctor__image flex">
+                <img src="image/Doctors/doctor-7.png" alt="doctor-pic">
+
+                <svg width="700" height="400" viewBox="0 0 400 400" fill="transparent" stroke="#c3dce5" stroke-width="1" class="find-doctor__max-circle">
+                    <path d="M -70,400 A 30,30 0,0,1 470,400 z"></path>
+                </svg>
+
+                <svg width="700" height="400" viewBox="0 0 400 400" fill="transparent" stroke="#c3dce5" stroke-width="1" class="find-doctor__mid-circle">
+                    <path d="M -50,400 A 30,30 0,0,1 450,400 z"></path>
+                </svg>
+
+                <svg width="700" height="400" viewBox="0 0 400 400" fill="#c3dce5" stroke="#c3dce5" stroke-width="1" class="find-doctor__mid-circle">
+                    <path d="M -30,400 A 30,30 0,0,1 430,400 z"></path>
+                </svg>
+
+                <div class="find-doctor__box flex">
+                    <h3>Find the best doctor you need</h3>
+                    <label for="find-search" class="flex">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="find-search" placeholder="Search Doctor">
+                    </label>
+                    <label for="find-location" class="flex">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" id="find-location" placeholder="Set Location">
+                    </label>
+                    <button class="btn btn-light">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <!--section-3-->
+        <section class="choose-care grid">
+            <div class="choose-care__image">
+                <img src="image/Doctors/doctor-9.png" alt="doctor-pic">
+                <div class="choose-care__doctorsList">
+                    <ul class="grid">
+                        <li class="doctorName">
+                            <img src="image/Doctors/assets/5.jpg" alt="doctor">
+                            <h6>Dr.Marya</h6>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                        <li class="doctorName">
+                            <img src="image/Doctors/assets/3.jpg" alt="">
+                            <h6>Dr.Micheil</h6>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                        <li class="doctorName">
+                            <img src="image/Doctors/assets/2.jpg" alt="">
+                            <h6>Dr.Barak</h6>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                        <li class="doctorName">
+                            <img src="image/Doctors/assets/6.jpg" alt="">
+                            <h6>Dr.Sara</h6>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                        <li class="doctorName">
+                            <img src="image/Doctors/assets/4.jpg" alt="">
+                            <h6>Dr.Charly</h6>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                        <li class="doctorName">
+                            <img src="image/Doctors/assets/8.jpg" alt="">
+                            <h6>Dr.Charly</h6>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                        <li class="doctorName">
+                            <img src="image/Doctors/assets/7.jpg" alt="">
+                            <h6>Dr.Charly</h6>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="choose-care__text">
+                <h2>Why you choose<br>
+                    We.care</h2>
+                <p>We.care gives you the tools and information you need.</p>
+                <div class="choose-care__list grid">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <h4>Save energy while receiving high-quality care</h4>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <h4>Save energy while receiving high-quality care</h4>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <h4>Save energy while receiving high-quality care</h4>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <h4>Save energy while receiving high-quality care</h4>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <h4>Save energy while receiving high-quality care</h4>
+                </div>
+                <button class="btn btn-light">Get free Consultation</button>
+            </div>
+        </section>
+
+        <!--section-4-->
+        <section class="specialist">
+            <h2>Meet our specialist</h2>
+            <p>We.care gives you the tools and information you need.</p>
+            <div class="specialist-container grid">
+                <div>
+                    <figure>
+                        <img src="image/Doctors/doctor-1.png" alt="doctor-pic">
+                        <figcaption><h3>Dr.Albert Flora</h3></figcaption>
+                    </figure>
+                    <p>Radiology and Imaging Sciences</p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="image/Doctors/doctor-3.png" alt="doctor-pic">
+                        <figcaption><h3>Dr.Clara Chen</h3></figcaption>
+                    </figure>
+                    <p>Rehabilitation Medicine</p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="image/Doctors/doctor-2.png" alt="doctor-pic">
+                        <figcaption><h3>Dr.John A. Butman</h3></figcaption>
+                    </figure>
+                    <p>Pharmacy</p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="image/Doctors/doctor-4.png" alt="doctor-pic">
+                        <figcaption><h3>Dr.Kathleen (Cathy) Conry</h3></figcaption>
+                    </figure>
+                    <p>Pain and Palliative Care</p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="image/Doctors/doctor-6.png" alt="doctor-pic">
+                        <figcaption><h3>Dr.Leonard N. Chen</h3></figcaption>
+                    </figure>
+                    <p>Laboratory Medicine</p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="image/Doctors/doctor-5.png" alt="doctor-pic">
+                        <figcaption><h3>Dr.Eva Baker</h3></figcaption>
+                    </figure>
+                    <p>Transfusion Medicine</p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="image/Doctors/doctor-10.png" alt="doctor-pic">
+                        <figcaption><h3>Dr.Thomas R. Burklow</h3></figcaption>
+                    </figure>
+                    <p>Hospital Epidemiology Service</p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="image/Doctors/doctor-8.png" alt="doctor-pic">
+                        <figcaption><h3>Dr.Barbara Jean Bryant</h3></figcaption>
+                    </figure>
+                    <p>Orthopaedics</p>
+                </div>
+            </div>
+            <div class="specialist__btns flex">
+                <div class="specialist__btn btn-active "></div>
+                <div class="specialist__btn"></div>
+                <div class="specialist__btn"></div>
+            </div>
+        </section>
+
+        <!--section-5-->
+        <section class="patients">
+            <h2>Our patients feedback about us</h2>
+            <p>We.care gives you the tools and information you need.
+                We.care gives you the tools and information you need.</p>
+            <div class="patients__container grid">
+                <div class="patients__image">
+                    <img src="image/Doctors/patient.png" alt="patient-picture">
+                </div>
+                <div class="patients__text">
+                    <div class="patients__titr grid">
+                        <img src="image/Doctors/Untitled.png" alt="">
+                        <div>
+                            <h5>Barak Jonas</h5>
+                            <p>New York</p>
+                            <div class="rate"></div>
+                        </div>
+                        <p>
+                            Lorem ipsum is placeholder text commonly used
+                            in the graphic, print, and publishing industries
+                            for previewing layouts and visual mockups.
+                        </p>
+                        <div class="patients__btns btn-container flex">
+                            <div class="patients__btn btn-active"></div>
+                            <div class="patients__btn btn-item"></div>
+                            <div class="patients__btn btn-item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--section-6-->
+        <section class="subscribe btn-light">
+            <h2>Subscribe for any news</h2>
+            <h2>update from wecare</h2>
+            <div class="subscribe__box">
+                <label for="email">
+                    <input type="email" id="email" class="subscribe__input" placeholder="Enter your Email Address">
+                    <button type="submit" value="Subscribe" class="btn btn-dark">Subscribe</button>
+                </label>
+            </div>
+        </section>
+
+    </div>
+
+</main>
+
+    <footer>
+        <div class="footer-container grid">
+            <div class="footer-container__logo grid">
+                <div class="btn btn-light">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                <h4>We.care</h4>
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+            <div class="footer-container__link">
+                <h4>For Patients</h4>
+                <a href="#">Resource</a>
+                <a href="#">Help&Support</a>
+                <a href="#">Live Auctions</a>
+                <a href="#">Item Details</a>
+            </div>
+            <div class="footer-container__link">
+                <h4>For Providers</h4>
+                <a href="#">Resource</a>
+                <a href="#">Help&Support</a>
+                <a href="#">Live Auctions</a>
+                <a href="#">Item Details</a>
+            </div>
+            <div class="footer-container__link">
+                <h4>For Partners</h4>
+                <a href="#">Resource</a>
+                <a href="#">Help&Support</a>
+                <a href="#">Live Auctions</a>
+                <a href="#">Item Details</a>
+            </div>
+            <div class="footer-container__link">
+                <h4>Our Company</h4>
+                <a href="#">Explore</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Our Blog</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/index.js"></script>
+    <script src="JS/popular-search.js"></script>
+</body>
+</html>

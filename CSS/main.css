@@ -1,0 +1,463 @@
+
+@import "footer.css";
+
+.container{
+    width: 90%;
+    margin: 210px auto 50px auto;
+}
+
+
+.popular>*{
+    margin-bottom: 30px;
+}
+
+.popular__container{
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.popular_list{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-right: 2px solid lightblue;
+}
+
+.popular_list li{
+    opacity: 0.8;
+}
+
+.popular_list li:hover{
+    color: #3c42ad;
+    cursor: pointer;
+}
+
+.popular_list_active{
+    color: #3c42ad;
+    font-weight: 700;
+}
+
+.popular__container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 7px;
+    padding: 20px 0;
+    transition: transform 0.3s linear;
+}
+
+.popular__container>div:hover{
+    cursor: pointer;
+    background-color: var(--bg-color)!important;
+    transform: rotateY(50deg);
+    transform-origin: center;
+}
+
+.popular__container>h5{
+    color: darkblue!important;
+}
+
+.popular__container>div>div{
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 5px 7px;
+}
+
+.popular_dermatology{
+    background:linear-gradient(150deg, #add3ea 50%, #51829e 100%);
+}
+
+.popular_heart{
+    background:linear-gradient(150deg, #e3d75c 50%, #ceb34c 100%);
+    color: indianred;
+}
+
+.popular_head{
+    background-color: rgb(100,100,120);
+    color: white;
+}
+
+.popular_medicine{
+    background:linear-gradient(90deg, #e37c5c 0%, #e37c5c 50%, #c94b34 50%, #c94b34 100%);
+    color: white;
+    font-weight: 900;
+}
+
+.popular_dentist{
+    background-color: powderblue;
+    color: white;
+}
+
+.popular_dentist{
+    background-color: powderblue;
+    color: white;
+}
+
+.popular_otolaryngology{
+    background-color: #2cd0be;
+    color: white;
+}
+
+.popular_dermatology img,
+.popular_otolaryngology img{
+    width: 20px;
+    height: 20px;
+}
+
+.popular__active{
+    background-color: var(--bg-color)!important;
+    border: 2px solid lightblue;
+}
+
+.find-doctor{
+    margin: 110px 0;
+}
+
+.find-doctor__text{
+    width: 40%;
+    padding: 10px 20px;
+}
+
+.find-doctor__text>*{
+    margin-bottom: 20px;
+}
+
+.find-doctor__text aside{
+    position: relative;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.find-doctor__search-icon{
+    padding: 7px 7px 5px 7px;
+    border-radius: 50%;
+    background-color: #e9f2f8;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.find-doctor__search-icon:after{
+    position: absolute;
+    left: 14px;
+    top: 40px;
+    content: '';
+    width: 2px;
+    height: 60px;
+    background-color: #e9f2f8;
+}
+
+.find-doctor__search-text{
+    padding: 0 40px;
+    line-height: 1.8;
+}
+
+.find-doctor__image{
+    width: 60%;
+    position: relative;
+    justify-content: center;
+}
+
+.find-doctor__max-circle,
+.find-doctor__mid-circle,
+.find-doctor__min-circle{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.find-doctor__box{
+    width: 25%;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.find-doctor__box{
+    box-shadow: -3px 5px 10px 5px #c3dce5;
+}
+
+.find-doctor__box>*{
+    margin-bottom: 10px;
+}
+
+.find-doctor__box>*:nth-child(1){
+    margin-bottom: 15px;
+}
+
+.find-doctor__box>label{
+    padding: 10px 5px;
+}
+
+.find-doctor__box>label input:focus{
+    outline: none;
+}
+
+.choose-care{
+    grid-template-columns: 45% 55%;
+    background-color: var(--bg-color);
+    padding-top: 100px;
+}
+
+.choose-care>*{
+    /*border: 1px solid indianred;*/
+}
+
+.choose-care__image{
+    width: 80%;
+    height: 380px;
+    justify-self: right;
+    border-radius: 170px 20px 0 0;
+    position: relative;
+    /*background-color: rgb(218, 228, 254);*/
+    background: linear-gradient(270deg, rgb(191, 199, 224), rgb(218, 228, 254));
+}
+
+.choose-care__image>img{
+    position: absolute;
+    bottom: 0;
+}
+
+.choose-care__text{
+    padding-bottom: 50px;
+    justify-self: center;
+}
+
+.choose-care__text>*{
+    margin-bottom: 15px;
+}
+
+.choose-care__list{
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    grid-auto-rows: 30px;
+}
+
+.choose-care__list i{
+    justify-self: center;
+}
+
+.choose-care__doctorsList{
+    width: 35%;
+    position: absolute;
+    top: 40px;
+    right: -67px;
+    padding: 15px 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -3px 5px 10px 5px #bdcdd9;
+}
+
+
+.choose-care__doctorsList ul{
+    grid-template-rows: repeat(5,minmax(30px, 1fr));
+    grid-auto-rows: 30px;
+    gap: 5px;
+    overflow-y: scroll;
+    max-height: 170px;
+    align-items: center;
+}
+
+.choose-care__doctorsList ul:hover{
+    cursor: all-scroll;
+}
+
+.choose-care__doctorsList ul::-webkit-scrollbar{
+    width: 0;
+}
+
+.doctorName:hover{
+    cursor: pointer;
+}
+
+.doctorName{
+    display: grid;
+    grid-template-columns: minmax(25px, 1fr) 2fr 1fr;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctorName img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+    align-self: start;
+}
+
+.doctorName h6{
+    width: 70px;
+}
+
+.doctorName i{
+    justify-self: right;
+    font-size: 10px;
+}
+
+.specialist{
+    margin-top: 50px;
+    text-align: center;
+    line-height: 2;
+}
+
+.specialist-container{
+    padding: 40px 0;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: 350px;
+    grid-auto-rows: 350px;
+    gap: 30px;
+}
+
+.specialist-container>div{
+    padding-top: 10px;
+    background-color: #f2f4f8;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+.specialist-container>div:hover{
+    box-shadow: -2px 5px 10px 5px #d7dde7;
+    transform: translateY(-15px);
+}
+
+
+.specialist-container>div>figure>img:hover{
+    transform: scale(1.1, 1.1);
+    overflow: hidden;
+}
+
+.specialist-container>div img{
+    width: 90%;
+    height: 250px;
+    background-color: #d7dde7;
+    padding-top: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in;
+}
+
+.specialist__btns{
+    justify-content: center;
+}
+
+.specialist__btn,
+.patients__btn{
+    padding: 4px;
+    background-color: #d7dde7;
+    border-radius: 50%;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.btn-active{
+    background-color: #3e4e6d;
+}
+
+.patients{
+    margin: 100px 0;
+    line-height: 2;
+}
+
+.patients>h2,
+.patients>p{
+    text-align: center;
+}
+
+.patients__container{
+    grid-template-columns: repeat(2, 1fr);
+    height: 300px;
+    gap: 70px;
+}
+
+.patients__container>*{
+    margin-top: 50px;
+}
+
+.patients__image{
+    width: 85%;
+    height: 65%;
+    background: linear-gradient(270deg, rgb(215, 223, 243), rgb(218, 228, 254));
+    position: relative;
+    border-top-left-radius: 180px 350px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 2px;
+    justify-self: end;
+    align-self: end;
+}
+
+.patients__image img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 450px;
+}
+
+.patients__text{
+    padding: 30px 0;
+}
+
+.patients__titr{
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 80px 80px 20px;
+    justify-items: start;
+    gap: 10px;
+    align-items: center;
+}
+
+.patients__titr img{
+    background-color: lightcyan;
+    width: 100%;
+    border-radius: 7px;
+    grid-column: 1/2;
+}
+
+.patients__titr>*:nth-child(2){
+    grid-column: 2/-1;
+}
+
+.patients__titr>*:nth-child(3){
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+
+.patients__titr>*:nth-child(4){
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+}
+
+.subscribe{
+    margin: 50px auto;
+    width: 70%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.subscribe>h2{
+    color: lightgrey;
+}
+
+.subscribe__box{
+    margin-top: 35px;
+}
+
+.subscribe__box>label{
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px 10px;
+}
+
+.subscribe__box>label>input{
+    background-color: transparent;
+    border: none;
+}
+
