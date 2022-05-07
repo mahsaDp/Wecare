@@ -29,7 +29,45 @@
     justify-self: start;
 }
 
+.footer-container__social{
+    display: inline-block;
+    padding: 7px 9px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    background: linear-gradient(130deg, #88bff6 30%, #ee7e7e 100%);
+    animation: animated-gradient 0.5s linear infinite;
+}
+
+@keyframes animated-gradient {
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
 .footer-container__link{
     display: grid;
     gap: 10px;
+}
+
+.footer-container__link>a:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: indianred;
+    transition: all 0.4s linear;
+}
+
+.footer-container__link>a:hover:after{
+    width: 100%;
 }

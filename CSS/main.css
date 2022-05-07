@@ -282,7 +282,7 @@
 .doctorName{
     display: grid;
     grid-template-columns: minmax(25px, 1fr) 2fr 1fr;
-    gap: 7px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -291,17 +291,14 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
     align-self: start;
 }
 
-.doctorName h6{
-    width: 70px;
-}
 
 .doctorName i{
     justify-self: right;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .specialist{
@@ -331,10 +328,10 @@
 }
 
 
-.specialist-container>div>figure>img:hover{
-    transform: scale(1.1, 1.1);
-    overflow: hidden;
-}
+/*.specialist-container>div>figure>img:hover{*/
+/*    transform: scale(1.1, 1.1);*/
+/*    overflow: hidden;*/
+/*}*/
 
 .specialist-container>div img{
     width: 90%;

@@ -124,6 +124,7 @@ header{
     left: 10%;
     bottom: 0;
 }
+
 .header-bottom__min-circle{
     height: 85%;
     width: 50%;
@@ -163,6 +164,22 @@ header{
     top: -110px;
     left: 42%;
 }
+
+/*@keyframes heart-animate {*/
+/*    25%{*/
+/*        transform: translate(300px, 180px);*/
+/*    }*/
+/*    50%{*/
+/*        transform: translate(120px, 460px);*/
+/*    }*/
+/*    75%{*/
+/*        transform: translate(-207px, 195px);*/
+/*    }*/
+/*    100%{*/
+/*        transform: translate(50px, -10px);*/
+/*    }*/
+
+/*}*/
 
 .head-bottom__search{
     position: absolute;
