@@ -23,6 +23,7 @@ header{
 
 .head-navbar__logo>div{
     justify-self: end;
+    background-color: #3742fa;
 }
 
 .head-navbar>div:nth-child(2){
