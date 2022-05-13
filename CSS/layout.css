@@ -15,18 +15,19 @@
 :root{
     --light-btn: #3742fa;
     --dark-btn: rgb(16,39,80);
-    --bg-color: rgb(232,241,255);
-    --titr-color: rgb(53, 59, 71);
-    --text-color: rgb(173, 173, 213);
+    --bg-color: rgb(205, 221, 246);
+    --titr-color: rgb(43, 47, 57);
+    --text-color: rgb(138, 138, 139);
 }
 
 body{
     background-color: ghostwhite;
+    overflow-x: hidden;
 }
 
 html{
-    font-size: 14px;
-    font-family: "Roboto", serif;
+    font-size: 16px;
+    font-family: "poppins", Tahoma, sans-serif;
     color: var(--text-color);
 }
 
@@ -34,10 +35,11 @@ h1,h2,
 h3,h4,
 h5,h6{
     color: var(--titr-color);
+    overflow-wrap: break-word;
 }
 
 h1{
-    font-size: 52px;
+    font-size: 50px;
 }
 
 h2{
@@ -45,7 +47,8 @@ h2{
 }
 
 h3{
-    font-size: 20px;
+    /*font-size: 19px;*/
+    transition: all 0.4s ease-in;
 }
 
 a{
@@ -66,12 +69,15 @@ input:focus::placeholder{
     opacity: 0;
 }
 
+input::placeholder{
+    font-size: 15px;
+}
 
 .btn{
-    padding: 7px 10px;
-    border-radius: 3px;
+    padding: 10px;
+    border-radius: 10px;
     color: whitesmoke;
-    font-size: 1rem;
+    font-size: 1.15rem;
     cursor: pointer;
 }
 
@@ -135,4 +141,12 @@ input:focus::placeholder{
 
 .grid{
     display: grid;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    opacity: 1;
 }
