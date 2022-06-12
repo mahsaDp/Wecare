@@ -34,4 +34,4 @@ Html, Css, JavaScript
 ![sample](https://user-images.githubusercontent.com/100931501/173246773-62615265-9ebe-4942-b4aa-1a3590fb296c.jpg)
 
 ## Contact me
-[mahsaa.emadi@gmail.com] <a href="mailto:mahsaa.emadi@gmail.com?"></a>
+mahsaa.emadi@gmail.com <a href="mailto:mahsaa.emadi@gmail.com?"></a>
